@@ -6,6 +6,9 @@ This unit, you will learn the different types of data and operators that can be 
 
 Because of how many basic concepts there are, Unit 2 is quite long.
 
+> **Reminder:** Use `Ctrl`+`Shift`+`V` to open *Preview*. \
+> You can drag around tabs or use `Ctrl`+`Shift`+`RightArrow` to split the *Editor*.
+
 ### Table of Contents
 - [Introduction](#introduction)
     - [Table of Contents](#table-of-contents)
