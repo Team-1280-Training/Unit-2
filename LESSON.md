@@ -61,7 +61,7 @@ When you're writing computer programs, you'll need to handle many different kind
 Java defines many distinct data types, essentially labels that you put on your data that tell the computer what kind of value something is. \
 Let's look at a few common data types and their definitions!
 
-- An **`int`** stores an integer, or a whole number. (E.g. 2, -10, 578)
+- An **`int`** stores an integer, or a whole number. (E.g. `2`, `-10`, `578`)
 - A **`double`** stores a decimal number. (E.g. `1.5`, `-4.0`, `48.002`)
 - A **`boolean`** stores a value that is either `true` or `false`
 - A **`String`** stores a sequence of characters. (E.g. `"Hello World!"`, `"as{t3r0g#mk&4k!!"`). You used these last unit
