@@ -144,7 +144,7 @@ Then, use `System.out.println(<variable>);` to print out each of the declared va
 
 The values of your variables will differ from this example.
 ```java
-class PersonalInformation {
+public class PersonalInformation {
     public static void main(String[] args) {
         // Ignore everything above this line
         int pets = 1;
