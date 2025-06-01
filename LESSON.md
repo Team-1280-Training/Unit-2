@@ -196,6 +196,13 @@ cats = dogs; // cats now has a value of 10
 It's important to note that `cats` and `dogs` were not "merged" or "linked" - cats accessed the *value* of dog (`10`) and assumed that *value*. The `dogs` variable was not changed. \
 If you then set `cats` to `1`, then `dogs` would still be `10`.
 
+When declaring variables, you actually don't have to initialize them right away:
+```java
+boolean winner;
+```
+Then, you can assign it a value later. The variable can't be used until it is guaranteed to have a value. \
+This is occasionally useful.
+
 #### > Exercise: Bakery
 [`Bakery.java`](Bakery.java) \
 You have been tasked with keeping track of the desserts at the local bakery. 
