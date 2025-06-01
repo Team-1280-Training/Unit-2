@@ -24,6 +24,7 @@ Because of how many basic concepts there are, Unit 2 is quite long.
     - [Arithmetic Operators](#arithmetic-operators)
         - [Updating Variables](#updating-variables)
     - [Comparison Operators](#comparison-operators)
+        - [String Comparison](#string-comparison)
     - [Logical Operators](#logical-operators)
     - [String Concatenation](#string-concatenation)
     - [Order of Operations](#order-of-operations)
@@ -342,6 +343,15 @@ y = x;
 System.out.println(x == y); // prints true because 4 is equal to 4
 System.out.println(y <= x); // prints true because 4 is less than or equal to 4
 ```
+
+#### String Comparison
+String equality shouldn't be done with `==`. Instead, use `string1.equals(string2)`.
+```java
+String secretCode = "12345";
+String input = "12345";
+System.out.println(input.equals(secretCode)); // true
+```
+You can also use `string1.equalsIgnoreCase(string2)` to ignore case when checking.
 
 ### Logical Operators
 Logical operators are used to operate on booleans and calculate logic. \
