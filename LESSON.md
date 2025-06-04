@@ -466,6 +466,11 @@ For step 6, one can also declare a new variable for the number of animals.
 - String concatenation (`+`) combines strings and other values into a string
 - Operator precedence order, highest first, is: parentheses `()`, arithmetic (PEMDAS), comparison, logical, assignment
 
+> **Tip:** There's no need to try to memorize rules or syntax, it's not like school and there are no formal 'quizzes'. \
+> Most programmers also don't feel the need to take notes. \
+> Instead, focus on practice and utilize the skills when they are needed, and eventually you'll no longer forget them. \
+> If you do forget, just go back and quickly reference past materials and exercise code.
+
 ### Keyboard Shortcuts
 | Keybinding | Command |
 | - | - |
