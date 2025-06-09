@@ -267,21 +267,15 @@ These operators are used for mathematical calculations. Used on two numeric oper
 | `*` | Product (multiplication) | `x * y` |
 | `/` | Quotient (division) | `x / y` |
 
-If at least one of the operands is a `double`, the result is also a `double`. \
-When both are `int`, the result is an `int`. <u>For division between two `int`s, the decimal part is removed from the result</u>: integer division **truncates** the result. \
-So `3 / 2` gives `1`, and `3.0 / 2` gives `1.5`.
-
 Examples!
 ```java
 int x = 4;
 int y = 2;
 
 int z = x - y; // z is assigned 2 (4 - 2)
-y = x / 2; // y is assigned 2 (4 / 2)
-x = y / z; // x is assigned 1 (2 / 2)
+y = x * 2; // y is assigned 8 (4 * 2)
+x = y + z; // x is assigned 10 (8 + 2)
 ```
-> **Note:** Many other math operations such as absolute values, square root, and exponentiation, don't have built-in Java operators, \
-> and are instead part of the built-in `Math` utility: `Math.abs(-1)`, `Math.sqrt(4.0)`, `Math.pow(2, 5)`.
 
 #### Updating Variables
 In many cases when assigning a variable, the new value expression also includes the variable itself. \
