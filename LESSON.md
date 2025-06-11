@@ -493,6 +493,6 @@ ___
 
 
 ## License
-© 2025 @aatle, @spacepotatoes3
+© 2025 @aatle, @spacepotatoes3, @gjgarson, @KaitoTLex
 
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
