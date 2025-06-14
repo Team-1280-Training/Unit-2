@@ -251,7 +251,8 @@ If the order of the two lines are switched, `pies` will already be `0` when `cup
 We use symbols called **operators** to (you guessed it!) perform a variety of operations on values, called **operands**. \
 There are many different types of operators, and we'll cover the most commonly used ones here!
 
-An **expression** is a combination of operators and operands , which produces a single value when **evaluated**.
+An **expression** is a combination of operators and operands, which produces a single value when **evaluated**. \
+Note that Java does not care about where a value came from: a variable, directly written, a calculation/expression; they can all be used interchangeably where ever a value is expected.
 
 Parentheses `()` can be used to group operations when needed, similar to in math.
 
