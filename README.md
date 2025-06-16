@@ -17,9 +17,9 @@ Because of how many basic concepts there are, Unit 2 is quite long.
 - [Variables](#variables)
     - [Declaring Variables](#declaring-variables)
         - [Naming Variables](#naming-variables)
-        - [> Exercise: Your Information](#-exercise-your-information)
+        - [>Exercise: Your Information](#exercise-your-information)
     - [Assigning to Variables](#assigning-to-variables)
-        - [> Exercise: Bakery](#-exercise-bakery)
+        - [>Exercise: Bakery](#exercise-bakery)
 - [Operators](#operators)
     - [Arithmetic Operators](#arithmetic-operators)
         - [Updating Variables](#updating-variables)
@@ -28,7 +28,7 @@ Because of how many basic concepts there are, Unit 2 is quite long.
     - [Logical Operators](#logical-operators)
     - [String Concatenation](#string-concatenation)
     - [Order of Operations](#order-of-operations)
-    - [> Exercise: Marine Life](#-exercise-marine-life)
+    - [>Exercise: Marine Life](#exercise-marine-life)
 - [Recap](#recap)
     - [Keyboard Shortcuts](#keyboard-shortcuts)
 
@@ -132,7 +132,7 @@ String greeting = "hi";
 > - Use `Ctrl`+`F` to find and replace text; `Ctrl`+`Shift`+`F` to search project instead of file.
 > - Use `Ctrl`+`D` or `Ctrl`+`Shift`+`L` to select multiple occurrences of text
 
-#### > Exercise: Your Information
+#### >Exercise: Your Information
 Inside [`PersonalInformation.java`](PersonalInformation.java), declare variables, with appropriate data types, for each of the following:
 1. An `int` variable called `pets` set to how many pets you have
 2. A variable called `gpa` set to a GPA
@@ -204,7 +204,7 @@ boolean winner;
 Then, you can assign it a value later. The variable can't be used until it is guaranteed to have a value. \
 This is occasionally useful.
 
-#### > Exercise: Bakery
+#### >Exercise: Bakery
 [`Bakery.java`](Bakery.java) \
 You have been tasked with keeping track of the desserts at the local bakery. 
 
@@ -400,7 +400,7 @@ Example: the below two expressions are equivalent.
 ((1 + (2 * 3)) > 4) && (5 < (6 * 7))
 ```
 
-### > Exercise: Marine Life
+### >Exercise: Marine Life
 [`MarineLife.java`](MarineLife.java) \
 You're compiling a report of species of marine life in a small area of the Pacific Ocean.
 1. You've documented **11 dolphins**, **8 octopuses**, **4 sea otters**, and **2 manta rays**. Declare variables to store how many of each animal you have documented, and when changes occur use operators to update them.
