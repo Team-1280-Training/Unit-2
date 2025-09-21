@@ -319,12 +319,12 @@ Also called relational operators.
 
 | Operator | Result (`boolean`): Whether or not... | Example |
 | - | - | - |
-| `==` | the values are *equal to* each other | `x == y` |
-| `!=` | the values are *not equal to* each other | `x != y` |
-| `>`  | the first value is *greater than* the second value | `x > y` |
-| `<`  | the first value is *less than* the second value | `x < y` |
-| `>=` | the first value is *greater than or equal to* the second value | `x >= y` |
-| `<=` | the first value is *less than or equal to* the second value | `x <= y` |
+| `==` | values are **equal** to each other | `x == y` |
+| `!=` | values are **not equal** to each other | `x != y` |
+| `>`  | first value is **greater than** second value | `x > y` |
+| `<`  | first value is **less than** second value | `x < y` |
+| `>=` | first value is **greater than or equal** to second value | `x >= y` |
+| `<=` | first value is **less than or equal** to second value | `x <= y` |
 
 Examples!
 ```java
@@ -352,11 +352,11 @@ You can also use `string1.equalsIgnoreCase(string2)` to ignore case when checkin
 Logical operators are used to operate on booleans and calculate logic. \
 The operands are usually *boolean expressions* involving comparison operators.
 
-| Operator | Result | Example |
-| - | - | - |
-| `&&` | Whether *both* operands are `true` | `x > 3 && x < 10` |
-| `\|\|` | Whether *either* operand is `true` | `x < 20 \|\| x > 40 ` |
-| `!` | Takes one operand. *Inverts* the boolean | `!(x > 0 && y > 0)` |
+| Operator | Name | Result | Example |
+| - | - | - | - |
+| `&&` | AND | Whether *both* operands are `true` | `x > 3 && x < 10` |
+| `\|\|` | OR | Whether *either* operand is `true` | `x < 20 \|\| x > 40 ` |
+| `!` | NOT | Invert the one operand to its opposite | `!(x > 0 && y > 0)` |
 
 Examples!
 ```java
