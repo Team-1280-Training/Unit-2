@@ -477,7 +477,9 @@ For step 6, one can also declare a new variable for the number of animals.
 | `Ctrl`+`Shift`+`L` | Select all occurrences |
 
 ## Feedback
-Please provide feedback if you have any.
+Please provide feedback if you have any. \
+Also, please give an estimate of how much time you spent on this unit.
+
 <details><summary>Possible feedback points</summary>
 
 - Confusing explanations
