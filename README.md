@@ -29,6 +29,7 @@ Because of how many basic concepts there are, Unit 2 is quite long.
     - [String Concatenation](#string-concatenation)
     - [Order of Operations](#order-of-operations)
     - [>Exercise: Marine Life](#exercise-marine-life)
+- [Formatting](#formatting)
 - [Recap](#recap)
     - [Keyboard Shortcuts](#keyboard-shortcuts)
 
@@ -448,6 +449,50 @@ public class MarineLife {
 For step 6, one can also declare a new variable for the number of animals.
 </details>
 
+## Formatting
+<sub>(Detour)</sub>
+
+In order to make code easily readable and look nice, there are standard practices such as putting spaces around operators. \
+Code formatting or styling is about the tiny details in how the code is written (they don't affect the code's behavior). \
+Examples include *whitespace*, *indentation* (comes up next unit), and how long lines are (*line length* limit).
+
+Programmers typically use a **formatter** to automatically format code. This standardizes how code is styled, which is especially important for shared codebases. \
+In VS Code settings, turn on `Format On Save` setting to have the formatter automatically run on save. To open *Settings*, press `Ctrl`+`,`.
+
+We recommend you use a formatter. It saves effort, and it also handles indentation for you. \
+Sometimes you might disagree with it, but its benefits are worth it.
+
+About optional blank lines: place them as needed to group code, but do not overuse them.
+
+Bad:
+```java
+public class Main{
+    public static void main(String[] args){
+        //foo
+int minAge=4;//Inclusive 
+        
+int maxAge=12;   //Inclusive
+int userAge=11;
+
+
+System.out.println(userAge>=minAge&&userAge<=maxAge );
+}
+}
+```
+Good:
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Foo
+        int minAge = 4; // Inclusive
+        int maxAge = 12; // Inclusive
+
+        int userAge = 11;
+        System.out.println(userAge >= minAge && userAge <= maxAge);
+    }
+}
+```
+
 ## Recap
 - Comments are created with `//` or `/*`+`*/`
 - The common data types are `int`, `double`, `boolean`, `String`
@@ -460,6 +505,7 @@ For step 6, one can also declare a new variable for the number of animals.
 - Logical operators (`&&` `||` `!`) perform logic on booleans, result in another boolean
 - String concatenation (`+`) combines strings and other values into a string
 - Operator precedence order, highest first, is: parentheses `()`, arithmetic (PEMDAS), comparison, logical, assignment
+- Formatting improves readability, and a formatter can be used to automatically handle styling
 
 > **Tip:** There's no need to try to memorize rules or syntax, it's not like school and there are no formal 'quizzes'. \
 > Most programmers also don't feel the need to take notes. \
@@ -475,6 +521,7 @@ For step 6, one can also declare a new variable for the number of animals.
 | `Ctrl`+`Shift`+`F` | Find text in project |
 | `Ctrl`+`D` | Select next occurrence |
 | `Ctrl`+`Shift`+`L` | Select all occurrences |
+| `Ctrl`+`,` | Open *Settings* tab |
 
 ## Feedback
 Please provide feedback if you have any. \
