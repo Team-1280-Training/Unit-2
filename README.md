@@ -250,7 +250,8 @@ If the order of the two lines are switched, `pies` will already be `0` when `cup
 
 ## Operators
 We use symbols called **operators** to (you guessed it!) perform a variety of operations on values, called **operands**. \
-There are many different types of operators, and we'll cover the most commonly used ones here!
+There are many different types of operators, and we'll cover the most commonly used ones here! \
+Most operators require two operands (*binary operators*), but some only need one (*unary* operators).
 
 An **expression** is a combination of operators and operands, which produces a single value when **evaluated**. \
 Note that Java does not care about where a value came from: a variable, directly written, a calculation/expression; they can all be used interchangeably where ever a value is expected.
@@ -258,6 +259,8 @@ Note that Java does not care about where a value came from: a variable, directly
 Parentheses `()` can be used to group operations when needed, similar to in math.
 
 The equal sign `=` is technically an operator (assignment) and so may be used inside of expressions, but in general you should only use them as independent statements.
+
+(Bitwise operators, which do bit manipulation on integer types, will not be taught in this course since they are niche.)
 
 ### Arithmetic Operators
 These operators are used for mathematical calculations. Used on two numeric operands (`int` or `double`).
@@ -269,6 +272,8 @@ These operators are used for mathematical calculations. Used on two numeric oper
 | `*` | Product (multiplication) | `x * y` |
 | `/` | Quotient (division) | `x / y` |
 
+Additionally, there are the unary `+` and `-` operators, e.g. `-x`; the `-` negates the value of the operand.
+
 Examples!
 ```java
 int x = 4;
@@ -277,6 +282,7 @@ int y = 2;
 int z = x - y; // z is assigned 2 (4 - 2)
 y = x * 2; // y is assigned 8 (4 * 2)
 x = y + z; // x is assigned 10 (8 + 2)
+z = -x * y; // z is assigned -80 (-10 * 8)
 ```
 
 #### Updating Variables
@@ -357,7 +363,7 @@ The operands are usually *boolean expressions* involving comparison operators.
 | - | - | - | - |
 | `&&` | AND | Whether *both* operands are `true` | `x > 3 && x < 10` |
 | `\|\|` | OR | Whether *either* operand is `true` | `x < 20 \|\| x > 40 ` |
-| `!` | NOT | Invert the one operand to its opposite | `!(x > 0 && y > 0)` |
+| `!` | NOT | (Unary) Invert operand to its opposite | `!(x > 0 && y > 0)` |
 
 Examples!
 ```java
@@ -371,7 +377,7 @@ System.out.println(!(x <= y || z != 3)); // prints false; the `or` operator retu
 ```
 
 > **Note:** Be extra cautious with the `!` operator on complex boolean expressions. \
-> The equivalent of `!(A && B)` is `!A || !B`. It is NOT `!A && !B`.
+> The equivalent expression of `!(A && B)` is `!A || !B`. It ISN'T `!A && !B`.
 
 ### String Concatenation
 You can add together strings to form another string, made of the two strings squished together. This is called concatenation.
@@ -386,6 +392,8 @@ System.out.println("Count: " + 3); // Count: 3
 ### Order of Operations
 Certain operators are evaluated first in an expression. Operators with higher **precedence** are evaluated first.
 
+Unary operators all have higher precedence than all binary operators.
+
 Within arithmetic, PE\[MD\]\[AS\] applies to the order of operations. \
 String concatenation is considered the same as addition. When using it, check the order of evaluation closely.
 
@@ -397,8 +405,8 @@ Parentheses can force some operations to be evaluated first.
 
 Example: the below two expressions are equivalent.
 ```java
-1 + 2 * 3 > 4 && 5 < 6 * 7
-((1 + (2 * 3)) > 4) && (5 < (6 * 7))
+1 + 2 * 3 > -4 && 5 < 6 * 7
+((1 + (2 * 3)) > (-4)) && (5 < (6 * 7))
 ```
 
 ### >Exercise: Marine Life
@@ -504,7 +512,7 @@ public class Main {
 - Comparison operators (`==` `!=` `>` `<` `>=` `<=`) compare numbers and give a boolean
 - Logical operators (`&&` `||` `!`) perform logic on booleans, result in another boolean
 - String concatenation (`+`) combines strings and other values into a string
-- Operator precedence order, highest first, is: parentheses `()`, arithmetic (PEMDAS), comparison, logical, assignment
+- Operator precedence order, highest first, is: parentheses `()`, unary, arithmetic (PEMDAS), comparison, logical, assignment
 - Formatting improves readability, and a formatter can be used to automatically handle styling
 
 > **Tip:** There's no need to try to memorize rules or syntax, it's not like school and there are no formal 'quizzes'. \
